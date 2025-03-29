@@ -12,8 +12,6 @@ const db = require("./db/db.config")
 const app = express()
 db()
 
-
-
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(cors())
