@@ -20,16 +20,12 @@ app.use(cors())
 app.use(express.static("public")) // public visible when in local file
 
 
+//auth/user routes
+const userRoutes = require('./app/routes/user.routes')
+app.use("/api/auth", userRoutes);
 
+//task routes
 
-
-
-
-///cron 
-
-
-
-//Admin API_S
 
 
 app.listen(process.env.PORT, () => {
